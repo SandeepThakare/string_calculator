@@ -1,21 +1,17 @@
 const { NumberParser } = require('../../../src/parsers');
 
-describe('DelimiterParser', () => {
+describe('NumberParser', () => {
   let parser;
 
   beforeEach(() => {
     parser = new NumberParser();
   });
 
-  test('should return default delimiter for simple input', () => {
-    const result = parser.parse('1,2,3');
-    expect(result.delimiter).toBe(',');
-    expect(result.numbersString).toBe('1,2,3');
+  test('should parse comma-separated numbers', () => {
+    expect(parser.parse('1,2,3', ',')).toEqual([1, 2, 3]);
   });
 
-  test('should parse custom delimiter', () => {
-    const result = parser.parse('//;\n1;2;3');
-    expect(result.delimiter).toBe(';');
-    expect(result.numbersString).toBe('1;2;3');
+  test('should handle newlines mixed with delimiters', () => {
+    expect(parser.parse('1\n2,3', ',')).toEqual([1, 2, 3]);
   });
 });

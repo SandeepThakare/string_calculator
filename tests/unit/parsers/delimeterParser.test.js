@@ -12,4 +12,10 @@ describe('DelimiterParser', () => {
     expect(result.delimiter).toBe(',');
     expect(result.numbersString).toBe('1,2,3');
   });
+
+  test('should parse custom delimiter', () => {
+    const result = parser.parse('//;\n1;2;3');
+    expect(result.delimiter).toBe(';');
+    expect(result.numbersString).toBe('1;2;3');
+  });
 });

@@ -1,0 +1,12 @@
+{
+  "name": "incubyte_tdd",
+  "version": "1.0.0",
+  "description": "TDD approach task",
+  "license": "ISC",
+  "author": "Sandeep Thakare",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  }
+}

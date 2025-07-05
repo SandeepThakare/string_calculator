@@ -1,4 +1,4 @@
-# String Calculator TDD Kata
+# String Calculator TDD
 
 A modular implementation of the String Calculator kata using Test-Driven Development principles.
 

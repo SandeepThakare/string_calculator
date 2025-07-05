@@ -1,5 +1,12 @@
+/**
+ * Unit tests for NumberParser class.
+ * @file numberParser.test.js
+ */
 const { NumberParser } = require('../../../src/parsers');
 
+/**
+ * Test suite for NumberParser
+ */
 describe('NumberParser', () => {
   let parser;
 

@@ -1,5 +1,12 @@
+/**
+ * Unit tests for DelimiterParser class.
+ * @file delimeterParser.test.js
+ */
 const { DelimiterParser } = require('../../../src/parsers');
 
+/**
+ * Test suite for DelimiterParser
+ */
 describe('DelimiterParser', () => {
   let parser;
 

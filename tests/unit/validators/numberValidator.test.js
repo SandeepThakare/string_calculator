@@ -1,7 +1,12 @@
-// tests/unit/validators/NumberValidator.test.js
-
+/**
+ * Unit tests for NumberValidator class.
+ * @file numberValidator.test.js
+ */
 const { NumberValidator } = require('../../../src/validators');
 
+/**
+ * Test suite for NumberValidator
+ */
 describe('NumberValidator', () => {
   let validator;
 

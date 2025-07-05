@@ -1,5 +1,8 @@
 const { MESSAGES } = require('../utils');
 
+/**
+ * NumberValidator class validates arrays of numbers for specific rules (e.g., no negatives).
+ */
 class NumberValidator {
   /**
    * Validates an array of numbers

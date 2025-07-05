@@ -1,5 +1,12 @@
+/**
+ * Unit tests for StringCalculator class.
+ * @file stringCalculator.test.js
+ */
 const { StringCalculator } = require('../../../src/calculator');
 
+/**
+ * Test suite for StringCalculator
+ */
 describe('StringCalculator', () => {
   let calculator;
 

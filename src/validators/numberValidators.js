@@ -18,7 +18,12 @@ class NumberValidator {
    * @throws {Error} - Throws error if negative numbers found
    */
   validateNegativeNumbers(numbers) {
-    throw new Error('Not implemented');
+    const negativeNumbers = this.findNegativeNumbers(numbers);
+    
+    if (negativeNumbers.length > 0) {
+      const message = `${MESSAGES.NEGATIVE_NOT_ALLOWED} ${negativeNumbers.join(',')}`;
+      throw new Error(message);
+    }
   }
   
   /**

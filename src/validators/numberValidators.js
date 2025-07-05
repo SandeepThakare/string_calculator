@@ -1,5 +1,3 @@
-// src/validators/NumberValidator.js
-
 const { MESSAGES } = require('../utils');
 
 class NumberValidator {

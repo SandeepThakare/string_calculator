@@ -3,7 +3,7 @@ class StringCalculator {
       if (numbers === '') {
         return 0;
       }
-      throw new Error('Not implemented');
+      return parseInt(numbers);
     }
   }
   

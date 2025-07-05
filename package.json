@@ -1,12 +1,17 @@
 {
-  "name": "incubyte_tdd",
+  "name": "string-calculator-tdd",
   "version": "1.0.0",
-  "description": "TDD approach task",
-  "license": "ISC",
-  "author": "Sandeep Thakare",
-  "type": "commonjs",
-  "main": "index.js",
+  "description": "String Calculator TDD Kata implementation",
+  "main": "stringCalculator.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": ["tdd", "kata", "javascript", "testing"],
+  "author": "Sandeep Thakare",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.5.0"
   }
 }

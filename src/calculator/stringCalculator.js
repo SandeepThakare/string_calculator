@@ -1,13 +1,22 @@
+const { NumberParser } = require('../parsers');
+const { NumberValidator } = require('../validators');
+
 class StringCalculator {
-    add(numbers) {
-      if (numbers === '') {
-        return 0;
-      }
-      
-      const nums = numbers.split(',').map(num => parseInt(num));
-      
-      return nums.reduce((sum, num) => sum + num, 0);
-    }
+  constructor() {
+    this.numberParser = new NumberParser();
+    this.numberValidator = new NumberValidator();
   }
   
-  module.exports = StringCalculator;
+  add(numbers) {
+    if (numbers === '') {
+      return 0;
+    }
+    
+    const parsedNumbers = this.numberParser.parse(numbers, ',');
+    this.numberValidator.validate(parsedNumbers);
+    
+    return parsedNumbers.reduce((sum, num) => sum + num, 0);
+  }
+}
+
+module.exports = StringCalculator;
